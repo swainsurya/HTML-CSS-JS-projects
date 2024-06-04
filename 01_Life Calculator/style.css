@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.background {
+    background: url("./images/time.jpg");
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.container h1 {
+    color: yellow;
+    font-size: 3rem;
+    border: 1px solid black;
+    text-shadow: 4px 3px red;
+}
+
+h2 {
+    color: yellow;
+    font-size: 3rem;
+    border: 1px solid black;
+    text-shadow: 4px 3px red;
+}
+
+.resultBox {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.resultBox div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#setIcon {
+    background-color: greenyellow;
+    font-size: 2.5rem;
+    cursor: pointer;
+    border-radius: 100px;
+    border: 2px solid white;
+}
+
+.setting {
+    position: absolute;
+    bottom: 30px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#dobInput {
+    font-size: 1.4rem;
+    padding: 1px 4px;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: cadetblue;
+    border: none;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border: 2px solid white;
+}
+
+#dobbtn{
+    font-size: 1.4rem;
+    padding: 1px 6px;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border: 2px solid white;
+}
+
+#dobbtn:hover {
+    background-color: darkblue;
+}
+
+.visibility {
+    display: none;
+}

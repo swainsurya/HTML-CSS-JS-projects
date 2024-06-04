@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+
+<body>
+    <div class="background">
+        <div class="container">
+            <h1 class="result">Kindly Enter Your DOB</h1>
+            <div class="resultBox visibility">
+
+                <!-- year -->
+                <div class="year">
+                    <h2>Years</h2>
+                    <h2 id="year">0</h2>
+                </div>
+
+                <!-- month -->
+                <div class="month">
+                    <h2>Months</h2>
+                    <h2 id="month">0</h2>
+                </div>
+
+                <!-- Day -->
+                <div class="day">
+                    <h2>Day</h2>
+                    <h2 id="day">0</h2>
+                </div>
+
+                <!-- Hour -->
+                <div class="hour">
+                    <h2>Hours</h2>
+                    <h2 id="hour">0</h2>
+                </div>
+
+                <!-- Minutes -->
+                <div class="minutes">
+                    <h2>Minutes</h2>
+                    <h2 id="minutes">0</h2>
+                </div>
+
+                <!-- Seconds -->
+                <div class="sec">
+                    <h2>Seconds</h2>
+                    <h2 id="second">0</h2>
+                </div>
+
+            </div>
+        </div>
+        <!-- setting -->
+        <div class="setting">
+            <!-- setting icon -->
+            <span class="material-symbols-outlined" id="setIcon">
+                settings
+            </span>
+            <!-- setting content -->
+            <div class="setting_content visibility">
+                <input type="date" id="dobInput">
+                <button id="dobbtn">Add DOB</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
