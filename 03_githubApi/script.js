@@ -16,7 +16,6 @@ let githubUrl = "" ;
 searchBtn.addEventListener("click", async (e) => {
     let data = await fetch(`https://api.github.com/users/${searchedTxt.value}`);
     let respone = await data.json();
-
     // container.removeChild(element1);
     if (respone.message === "Not Found") {
         element1.setAttribute("class", "notfound");
@@ -25,8 +24,6 @@ searchBtn.addEventListener("click", async (e) => {
         container.appendChild(element1);
     }
     else {
-        console.log(respone);
-        console.log(" found");
         element1.classList.add("hide");
         gitbox.classList.remove("hide");
         setImg.src = `${respone.avatar_url}`;
