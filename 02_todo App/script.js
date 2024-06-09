@@ -21,12 +21,15 @@ let addingTodo = () => {
             let ele = document.createElement('div');
             ele.classList.add("todoItem");
             ele.innerHTML = `
-            <input type="text" value="${todos[n].name}" readonly class="todoname">
-            <div class = "allBtn">
-            <span class="deletebtn material-symbols-outlined" id="${todos[n].id}" onClick = "deleteClick(${todos[n].id})">Delete</span>
+            <input type="text" value="${todos[n].name}" readonly class="todoname">`;
+
+            let allbtn = document.createElement("div");
+            allbtn.classList.add("allBtn");
+            allbtn.innerHTML = `<span class="deletebtn material-symbols-outlined" id="${todos[n].id}" onClick = "deleteClick(${todos[n].id})">Delete</span>
             <span class="deletebtn material-symbols-outlined" id="${todos[n].id + 1}"  onclick="editClick(${todos[n].id + 1})">edit</span>
-            <span class="deletebtn material-symbols-outlined" id="${todos[n].id + 2}" onclick="doneClick(${todos[n].id + 2})">check_circle</span>
-            </div>`;
+            <span class="deletebtn material-symbols-outlined" id="${todos[n].id + 2}" onclick="doneClick(${todos[n].id + 2})">check_circle</span>`;
+
+            ele.appendChild(allbtn);
             container.appendChild(ele);
             todoInput.value = "";
         }
