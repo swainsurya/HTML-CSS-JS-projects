@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form class="weatherForm">
+            <input type="text" placeholder="Enter city name" class="cityName">
+            <input type="submit" value="Search" class="searchBtn">
+        </form>
+        <div class="card displayNone">
+            <h3 class="citynameDisplay"n>City Name</h3>
+            <p class="temp">Temp - 40 <sup>0</sup></p>
+            <p class="humidity">Humidity - 70%</p>
+            <p class="weatherDesc">Temp Desc</p>
+            <p class="weatherEmoji">⛅</p>
+        </div>
+        <div class="error displayNone">
+            City Not Found
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+<footer>copyright &copy; Surya Projects</footer>
+</html>
